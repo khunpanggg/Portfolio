@@ -64,10 +64,6 @@ p {
   font-size: 1.3rem;
 }
 
-.img-logo img {
-  text-align: center;
-}
-
 .video-container {
   overflow: hidden;
   position: relative;
@@ -124,6 +120,7 @@ h3 {
   padding: 5px;
   max-width: 50px;
 }
+
 
 /*-------------About Me-------------*/
 .container {
