@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
 
 html {
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 :root {
@@ -11,9 +14,53 @@ html {
 
 }
 
-nav a {
-  color: var(--main-txt-color);
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--main-bg-color);
+  font-family: 'Padauk', sans-serif;
 }
+
+h1,
+h2,
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+
+.navbar-item a {
+  color: var(--main-txt-color);
+  text-transform: uppercase;
+  font-family: 'Padauk', sans-serif;
+  font-weight: 400;
+}
+
+.navbar-item a {
+  color: var(--main-txt-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  background: var(--main-txt-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-item a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 
 .navbar-brand span {
   font-family: 'Abril Fatface', cursive;
@@ -93,34 +140,31 @@ p {
   }
 }
 
-body {
-  margin: 0;
-  min-height: 100%;
-  background-color: var(--main-bg-color);
-  font-family: 'Padauk', sans-serif;
-}
+
 
 
 
 footer {
   padding: 1rem;
-  text-align: center;
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 400;
-}
-
 #icon-contact img {
+  margin-right: 10px;
   padding: 5px;
-  max-width: 50px;
+  max-width: 45px;
 }
 
+.footer-text-l h3,
+p {
+  text-align: left;
+}
+
+.footer-text-r h4 {
+
+  text-decoration: underline 1px;
+}
 
 /*-------------About Me-------------*/
 .container {
@@ -314,7 +358,7 @@ h3 {
   text-align: center;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
-  max-width: 300px;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
