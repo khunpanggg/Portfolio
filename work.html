@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/logo.png" />
   <link rel="stylesheet" href="style.css">
   <title>NICHAPAT</title>
 </head>
@@ -16,9 +19,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light p-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./img/Logo.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
-          NKWC
+        <a class="navbar-brand d-flex" href="index.html">
+          <img src="./img/logo.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+          <span>NKWC</span>
         </a>
         <!-- navbar toggler-->
         <button class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse">
@@ -36,7 +39,7 @@
               <a href="work.html" class="nav-link active">Work</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="Contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -58,124 +61,535 @@
     <hr>
     <!-- Portfolio -->
     <div class="row justify-content-space-between">
-      <div class="col-md-4 col-lg-3">
+      <!-- 3D Model 1 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
         <article class="card card--1">
           <div class="card__img"></div>
           <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-1"></div>
           </a>
           <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+            <span class="card__category">3D Model</span>
+            <h3 class="card__title">Magical Motorbike
+            </h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
           </div>
         </article>
       </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Magical Motorbike</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/work/p001.jpg" class="img-fluid" alt="...">
+              <img src="img/work/p002.jpg" class="img-fluid" alt="...">
+              <img src="img/work/p003.jpg" class="img-fluid" alt="...">
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Magical Motorbike</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>มอเตอร์ไซค์ที่ปรากฏในภาคแรกและภาคสุดท้ายจากภาพยนตร์เรื่อง Harry Potter
+                    มอเตอร์ไซค์บินได้คันนี้เป็นของซีเรียส และเมื่อถึงเวลามารับแฮร์รีออกจากบ้าน
+                    แฮกริดก็มารับแฮร์รีด้วยมอเตอร์ไซค์คันนี้</p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-      </div>
-      <div class="col-md-4 col-lg-3">
-        <article class="card card--1">
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Recipe</span>
-            <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
+        </div>
       </div>
 
+      <!-- 3D Model 2 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
+        <article class="card card--2">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-2"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">3D Model</span>
+            <h3 class="card__title">Building</h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Building</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/work/Building-1.jpg" class="img-fluid" alt="...">
+              <img src="img/work/Building-2.jpg" class="img-fluid" alt="...">
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Building</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>ตึกเรียนมหาวิทยาลัยชื่อดังในประเทศอังกฤษ สร้างโดยการขึ้นรูปทรงจากกล่องสี่เหลี่ยมและใช้การ Coding
+                    ด้วย script python</p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 3 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
+        <article class="card card--3">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-3"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">3D Model</span>
+            <h3 class="card__title">Monster Book</h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Monster Book</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/work/moster-1.png" class="img-fluid" alt="...">
+              <img src="img/work/moster-2.jpg" class="img-fluid" alt="...">
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Monster Book</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>หนังสือเรียนสัตว์วิเศษ (The Monster Book of Monsters) จากภาพยนตร์เรื่อง Harry Potter and the
+                    Prisoner of Azkaban หนังสือเล่มนี้ค่อนข้างดุร้าย มันจะงับนิ้วและวิ่งไล่ของผู้ที่เปิดอ่าน</p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 4 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
+        <article class="card card--4">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-4"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">3D Model</span>
+            <h3 class="card__title">My Bedroom</h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">My Bedroom</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/work/badroom1.jpg" class="img-fluid" alt="...">
+              <img src="img/work/badroom2.jpg" class="img-fluid" alt="...">
+              <img src="img/work/badroom4.jpg" class="img-fluid" alt="...">
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>My Bedroom</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>ห้องนอนในฝันของฉัน เป็นห้องเล็กๆ ผนังห้องเป็นสีไม้อ่อนๆ มีโต๊ะทำงานและรายล้อมไปด้วยกองหนังสือมากมาย
+                    ห้องนอนรวบรวมองค์ประกอบเช่น เตียง โต๊ะอ่านหนังสือ หมอน และเครื่องปรับอากาศ
+                  </p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 5 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-left">
+        <article class="card card--5">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-5"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">3D Model</span>
+            <h3 class="card__title">Breakfast</h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Breakfast</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/work/cup-1.jpg" class="img-fluid" alt="...">
+              <img src="img/work/cup-2.jpg" class="img-fluid" alt="...">
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Breakfast</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>อาหารมื้อเช้าที่คนไทยคุ้นเคยกันมายาวนาน รับประทานปาท่องโก๋จิ้มนมคู่กับเครื่องดื่มอย่างโอเลี้ยง
+                    แก้หวานเลี่ยนด้วยชาจีนร้อนๆ
+                  </p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 6 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-left">
+        <article class="card card--6">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-6"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">Animation Short Film</span>
+            <h3 class="card__title">HIDE AND SEEK</h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">HIDE AND SEEK</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/hYHmUpNvqS0" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>HIDE AND SEEK</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>ณ หมู่บ้านในเมืองชนบท มีพี่น้องฝาแฝดคู่หนึ่ง ชอบเล่นซ่อนแอบกันในป่าที่ใกล้สุสาน มาตั้งแต่เด็ก
+                    วันหนึ่งทั้งครอบครัวได้เดินทางไปเก็บผลไม้ป่า เพื่อนำมาขายในวันรุ่งเช้า ระหว่างที่เก็บนั้น
+                    ไม่พบน้องสาว พบตัวอีกทีคือรู้ว่าเสียชีวิต เพราะพลัดตกไปในน้ำตก ซึ่งน้องว่ายน้าไม่เป็น
+                    พี่สาวซึ่งทำใจยอมรับไม่ได้ คิดถึงน้องสาว จึงกลับไปเล่นซ่อนแอบกับน้องในป่าแห่งความทรงจำอีกครั้ง!
+                  </p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 7 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-left">
+        <article class="card card--7">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-7"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">Animation Short Film</span>
+            <h3 class="card__title">Mėnulis</h3>
+            <span class="card__by"> <span class="card__author" title="author">2019</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mėnulis</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/t2wcccW0Mbc" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Mėnulis</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>เมื่อโลกมีอาการไอเนื่องจากติดเชื้อ COVID-19 โลกได้ไอจนทำให้พระจันทร์สะดุ้งตื่นจากการหลับไหล
+                    และพระจันทร์ได้หาวิธีการช่วยโลกที่ติดเชื้อ จึงใช้พลังแห่งดวงจันทร์ใช้ทำของวิเศษให้โลกป้องกันตัวเอง
+                    คือ หน้ากากอนามัย!
+                  </p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 8 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-left">
+        <article class="card card--8">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-8"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">Animation Short Film</span>
+            <h3 class="card__title">Khok Nong Na</h3>
+            <span class="card__by"> <span class="card__author" title="author">2020</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Khok Nong Na</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/FdycujIZj3o" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Khok Nong Na</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>แอนิเมชันที่จะทำให้ทุกคนเข้าใจเกี่ยวกับ "โคกหนองนาโมเดล"
+                    การบริหารจัดการทรัพยากรน้ำอย่างมีประสิทธิภาพ แบบง่ายๆ ผ่าน 2 ตัวละครสมัครและสมาน
+                    เกษตรกรผู้ประสบภัยกับการเพาะปลูกช่วงหน้าแล้ง
+                  </p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 9 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
+        <article class="card card--9">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-9"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">Animation</span>
+            <h3 class="card__title">Hung Delivery</h3>
+            <span class="card__by"> <span class="card__author" title="author">2020</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Hung Delivery</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Jj1kbAl5eTw" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Hung Delivery</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>
+                    ยามกลางวันเจ้าพาหนะขนส่งอาหารจะขนส่งอาหารให้แก่ลูกค้าผู้หิวโหยแต่พอตกดึกจะได้รับออเดอร์จากนักพรตผู้วิเศษ
+                    รถขนอาหารชนิดนี้จึงสามารถพลางตัวด้วยควันที่โพยพุ่งขึ้นมาจากกล่องส่งอาหารขนาดใหญ่ด้านบนเพื่อไม่ให้มนุษย์ธรรมดาเห็นว่ายามดึกมีนักพรตผู้วิเศษที่ละเมิดข้อห้ามที่ห้ามรับประทานอาหารหลังตะวันตกดิน
+                  </p>
+                  <p>Using Autodesk Maya</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 10 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
+        <article class="card card--10">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-10"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">3D Model</span>
+            <h3 class="card__title">Harry Potter</h3>
+            <span class="card__by"> <span class="card__author" title="author">2020</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Harry Potter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/work/harry-2.png" class="img-fluid" alt="...">
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Harry Potter</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>ปั้น Portrait โดย Reference ตัวละครหลัก Harry Potter วัยเด็ก จากภาพยนตร์เรื่อง Harry Potter and the
+                    Philosopher's Stone โดยใช้เครื่องมือ sculpting หลากหลายในการปั้น และลงสีด้วยเครื่องมือ Paint
+                    ของโปรแกรม ZBrush</p>
+                  <p>Using ZBrush</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3D Model 11 -->
+      <div class="col-md-4 col-lg-3" data-aos="fade-right">
+        <article class="card card--11">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+            <!--img hover-->
+            <div class="card__img--hover" data-bs-toggle="modal" data-bs-target="#exampleModal-11"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">Landscape</span>
+            <h3 class="card__title">Fortress of Asia</h3>
+            <span class="card__by"> <span class="card__author" title="author">2021</span></span>
+          </div>
+        </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal-11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Fortress of Asia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YV-dlKuTH3M"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="row p-4">
+                <div class="col-md-6 col-lg-6">
+                  <h2>Fortress of Asia</h2>
+                  <h3>2020</h3>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <p>
+                    ณ ดินแดนตะวันออก หอบล้อมไปด้วยหุบเขาและผืนน้ำอันกว้างใหญ่
+                    ปกคลุมไปด้วยม่านหมอกและท้องฟ้าทั้งยามสว่างและยามมืดย่อมมีสีม่วงเพียงสีเดียว
+                    นอกจากนี้บริเวณป้อมปราการยังมีเกาะเล็กเกาะน้อยที่แฝงไปด้วยความมืดมิดที่พร้อมจะย้ำกรายสู่ดินแดนป้อมปราการตะวันออก!
+                  </p>
+                  <p>Using Unreal engine</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer>
         <hr>
         <div class="row align-items-center">
@@ -187,7 +601,7 @@
             Phranakhon District, Bangkok 10200
           </div>
           <div class="col" id="icon-contact">
-            <h1>Social Media</h1>
+            <h1>Follow me</h1>
             <img src="/img/icon/github.svg" alt="">
             <img src="/img/icon/instagram.svg" alt="">
             <img src="/img/icon/twitter.svg" alt="">
@@ -200,5 +614,6 @@
 </body>
 
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 
 </html>

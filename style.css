@@ -6,9 +6,26 @@ html {
 }
 
 :root {
-  --main-bg-color: #D6D0BF;
+  --main-bg-color: #f3eddd;
   --main-txt-color: #403239;
 
+}
+
+nav a {
+  color: var(--main-txt-color);
+}
+
+.navbar-brand span {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
 }
 
 #title {
@@ -47,6 +64,10 @@ p {
   font-size: 1.3rem;
 }
 
+.img-logo img {
+  text-align: center;
+}
+
 .video-container {
   overflow: hidden;
   position: relative;
@@ -83,9 +104,7 @@ body {
   font-family: 'Padauk', sans-serif;
 }
 
-nav a {
-  color: var(--main-txt-color);
-}
+
 
 footer {
   padding: 1rem;
@@ -111,12 +130,11 @@ h3 {
   padding: 20px;
 }
 
+/*
 .profile-card {
-  background-color: #222222;
-  border: #222222 1px solid;
-  margin-bottom: 20px;
+  border: #403239 1px solid;
 
-}
+}*/
 
 .profile-pic {
   border-radius: 50%;
@@ -133,14 +151,14 @@ h3 {
 
 
 .profile-info {
-  color: #BDBDBD;
+  color: var(--main-txt-color);
   padding: 125px 25px 25px 25px;
   position: relative;
   margin-top: 80px;
 }
 
 .profile-info h2 {
-  color: #E8E8E8;
+  color: var(--main-txt-color);
   letter-spacing: 4px;
   padding-bottom: 12px;
 }
@@ -205,7 +223,7 @@ h3 {
 .profile-card:active .hvr-underline-from-center:before {
   left: 0;
   right: 0;
-  height: 1px;
+  height: 2px;
   background: #CECECE;
   border-radius: 0;
 }
@@ -213,12 +231,57 @@ h3 {
 /*-------------Work-------------*/
 .card--1 .card__img,
 .card--1 .card__img--hover {
-  background-image: url(/img/demo.jpg);
+  background-image: url(/img/work/p001.jpg);
 }
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-  background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url(/img/work/Building-1.jpg);
+}
+
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url(/img/work/moster-1.png);
+}
+
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url(/img/work/badroom1.jpg);
+}
+
+.card--5 .card__img,
+.card--5 .card__img--hover {
+  background-image: url(/img/work/cup-1.jpg);
+}
+
+.card--6 .card__img,
+.card--6 .card__img--hover {
+  background-image: url(/img/work/HS-1.jpg);
+}
+
+.card--7 .card__img,
+.card--7 .card__img--hover {
+  background-image: url(/img/work/moon-2.jpg);
+}
+
+.card--8 .card__img,
+.card--8 .card__img--hover {
+  background-image: url(/img/work/SM-1.jpg);
+}
+
+.card--9 .card__img,
+.card--9 .card__img--hover {
+  background-image: url(/img/work/Hung-1.jpg);
+}
+
+.card--10 .card__img,
+.card--10 .card__img--hover {
+  background-image: url(/img/work/harry-1.jpg);
+}
+
+.card--11 .card__img,
+.card--11 .card__img--hover {
+  background-image: url(/img/work/Game.png);
 }
 
 .card__img {
@@ -228,9 +291,6 @@ h3 {
   background-repeat: no-repeat;
   width: 100%;
   height: 235px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-
 }
 
 .card__info-hover {
@@ -249,8 +309,6 @@ h3 {
   width: 100%;
   position: absolute;
   height: 235px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
   top: 0;
 
 }
