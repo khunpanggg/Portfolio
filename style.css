@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
 
 html {
   height: 100%;
@@ -18,12 +19,11 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: var(--main-bg-color);
-  font-family: 'Padauk', sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 400;
 }
@@ -31,8 +31,8 @@ h3 {
 .navbar-item a {
   color: var(--main-txt-color);
   text-transform: uppercase;
-  font-family: 'Padauk', sans-serif;
-  font-weight: 400;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 700;
 }
 
 .navbar-item a {
@@ -67,6 +67,7 @@ h3 {
   font-weight: 400;
   align-self: center;
   padding-left: 10px;
+  letter-spacing: 2px;
 }
 
 .carousel-indicators li {
@@ -97,17 +98,15 @@ h3 {
   margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 32px;
-  max-width: 740px;
+  max-width: 750px;
 }
 
-.content h1,
-h2,
-h3,
-p {
+.content h1 {
   text-align: center;
 }
 
 .content p {
+  text-align: center;
   font-size: 1.3rem;
 }
 
@@ -140,10 +139,7 @@ p {
   }
 }
 
-
-
-
-
+/*-------------footer-------------*/
 footer {
   padding: 1rem;
   background-color: var(--main-bg-color);
@@ -157,13 +153,52 @@ footer {
 }
 
 .footer-text-l h3,
-p {
+.footer-text-l p {
   text-align: left;
+  letter-spacing: 2px;
 }
 
-.footer-text-r h4 {
+.round-button {
+  width: 25%;
+}
 
-  text-decoration: underline 1px;
+.round-button-circle {
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 1px solid #999;
+  overflow: hidden;
+}
+
+.round-button-circle:hover {
+
+  background: #000;
+}
+
+.round-button a:hover {
+  color: #fff;
+}
+
+.round-button a {
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
+
+  text-align: center;
+  color: #000;
+  font-family: Verdana;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.to-top {
+  text-align: -webkit-right;
 }
 
 /*-------------About Me-------------*/
@@ -185,7 +220,7 @@ p {
   right: 0;
   margin: auto;
   z-index: 1;
-  max-width: 150px;
+  max-width: 170px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -196,6 +231,8 @@ p {
   padding: 125px 25px 25px 25px;
   position: relative;
   margin-top: 80px;
+  background-color: #fff;
+  box-shadow: 1px 13px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-info h2 {
@@ -204,6 +241,28 @@ p {
   padding-bottom: 12px;
 }
 
+.profile-info h3 {
+  color: var(--main-txt-color);
+  text-align: left;
+  color: #b94e3a;
+  font-weight: 700;
+}
+
+.profile-info h4,
+.profile-info h5,
+.profile-info h6 {
+  color: var(--main-txt-color);
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.profile-info h4 {
+  font-weight: 600;
+}
+
+.box-about {
+  border-left: 1px solid #CECECE;
+}
 
 .profile-info span {
   display: block;
@@ -213,7 +272,18 @@ p {
 }
 
 .profile-info p {
-  font-size: 20px;
+  font-size: 18px;
+  padding: 25px;
+  letter-spacing: 2px;
+}
+
+.h-skill h3 {
+  text-align: center;
+}
+
+.text-skill span {
+  font-size: 18px;
+  color: #000;
 }
 
 .profile-card:hover .profile-pic {
