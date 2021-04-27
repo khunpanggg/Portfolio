@@ -493,3 +493,7 @@ footer {
 .text-portfolio p {
   font-family: 'Padauk';
 }
+
+.box-contact span {
+  font-size: 25px;
+}
